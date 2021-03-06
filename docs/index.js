@@ -10,8 +10,8 @@ const resizeCanvas = () => {
     let canvas = document.getElementById("canvas");
     const wh = window.innerHeight;
     const ww = window.innerWidth;
-    const nw = 256;
-    const nh = 239;
+    const nw = 640;
+    const nh = 480;
     const waspct = ww / wh;
     const naspct = nw / nh;
 
@@ -21,8 +21,8 @@ const resizeCanvas = () => {
       var val = ww / nw;
     }
     let ctrldiv = document.querySelector(".ctrl_div");
-    canvas.style.height = 239 * val - ctrldiv.offsetHeight - 18 + "px";
-    canvas.style.width = 256 * val - 24 + "px";
+    canvas.style.height = 480 * val - ctrldiv.offsetHeight - 18 + "px";
+    canvas.style.width = 640 * val - 24 + "px";
   }, 1200);
 };
 resizeCanvas();
